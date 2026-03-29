@@ -3,6 +3,7 @@ const sidebar = document.querySelector('.sidebar');
 
 const showSidebar = document.querySelector('#showSidebar');
 const hideSidebar = document.querySelector('#hideSidebar');
+console.log(showSidebar)
 
 showSidebar.addEventListener('click', function (e) {
     sidebar.style.display = "flex";
