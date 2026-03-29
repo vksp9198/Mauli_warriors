@@ -1,7 +1,13 @@
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+//sidebar starts
+const sidebar = document.querySelector('.sidebar');
 
-menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    navLinks.style.color = "#111"
-});
+const showSidebar = document.querySelector('#showSidebar');
+const hideSidebar = document.querySelector('#hideSidebar');
+
+showSidebar.addEventListener('click', function (e) {
+    sidebar.style.display = "flex";
+})
+
+hideSidebar.addEventListener('click', function (e) {
+    sidebar.style.display = "none";
+})
