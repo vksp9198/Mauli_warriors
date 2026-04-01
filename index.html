@@ -20,16 +20,26 @@
                     </a>
                 </div>
 
-                <nav class="nav" id="navMenu">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="services.html" class="nav-link">Services</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
+                <nav class="nav">
+                    <div class="container">
+                        <div class="tabs">
+                            <input type="radio" id="radio-1" name="tabs" checked="">
+                            <label class="tab" for="radio-1"><a href="index.html">Home</a></label>
+
+                            <input type="radio" id="radio-2" name="tabs">
+                            <label class="tab" for="radio-2"><a href="#about">About</a></label>
+
+                            <input type="radio" id="radio-3" name="tabs">
+                            <label class="tab" for="radio-3"><a href="#section-packagesII">Services</a></label>
+
+                            <input type="radio" id="radio-4" name="tabs">
+                            <label class="tab" for="radio-4"> <a href="#ftr">Contact</a></label>
+                        </div>
+                    </div>
                 </nav>
 
                 <div class="header-btns">
-                    <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+                    <a href="https://wa.me/8369961434" class="btn btn-primary">Let's Talk</a>
                     <button class="menu-btn" id="menuBtn">☰</button>
                 </div>
 
@@ -53,8 +63,8 @@
                         </p>
 
                         <div class="hero-btns">
-                            <a href="projects.html" class="btn btn-primary">View My Work →</a>
-                            <a href="#" class="btn btn-outline">Download CV</a>
+                            <a href="#section-packagesII" class="btn btn-primary">View Packages →</a>
+                            <a href="#section-events" class="btn btn-outline">See Events →</a>
                         </div>
 
                         <div class="hero-stats">
@@ -84,7 +94,7 @@
             </section>
 
             <!-- SERVICES  I -->
-            <section class="section">
+            <section class="sections" id="about">
                 <div class="container">
 
                     <div class="section-title">
@@ -94,21 +104,37 @@
 
                     <div class="services-grid">
                         <div class="service-card">
-                            <h3>ESPORTS BROADCASTING / PRODUCTION</h3>
-                            <p>Custom websites built with HTML, CSS, JavaScript and React.</p>
-                            <br> <a href="projects.html" class="">Explore now →</a>
+                            <h3> BROADCASTING / PRODUCTION</h3>
+                            <p>We provide professional esports broadcasting and tournament management services.
+                                From live streaming, overlays, and commentary to match scheduling and smooth
+                                coordination, we handle everything.
+                                We ensure high-quality production and a clean, exciting viewing experience.
+                                Perfect for community events, scrims, and large tournaments.
+                                Let’s make your esports event look premium and unforgettable.</p>
+                            <br> <a href="#" class="ud">Explore now →</a>
                         </div>
 
                         <div class="service-card">
-                            <h3>ESPORTS TOURNAMENT / MANAGEMENT</h3>
-                            <p>Clean, modern and user-friendly interfaces for best experience.</p>
-                            <br> <a href="projects.html" class="">Explore now →</a>
+                            <h3> TOURNAMENT / MANAGEMENT</h3>
+                            <p>We provide professional esports tournament management services.
+                                From registrations, scheduling, and match coordination to fair rules and smooth
+                                execution, we handle everything.
+                                We ensure a well-organized and stress-free tournament experience for players and
+                                organizers.
+                                Perfect for small events, community , and large esports competitions.
+                                Let’s make your journey successful and smooth.</p>
+                            <br> <a href="#" class="ud">Explore now →</a>
                         </div>
 
                         <div class="service-card">
                             <h3>ESPORTS TOURNAMENT / TEAM</h3>
-                            <p>Fast websites with optimized code, images and SEO best practices.</p>
-                            <br> <a href="projects.html" class="">Explore now →</a>
+                            <p>We manage and support esports teams with proper planning and coordination.
+                                From team registration, match updates, and communication to performance tracking, we
+                                handle everything smoothly.
+                                We help teams stay organized, focused, and ready for every tournament.
+                                Perfect for competitive teams and growing esports squads.
+                                Join us and take your esports team to the next level.</p>
+                            <br> <a href="#" class="ud">Explore now →</a>
                         </div>
                     </div>
 
@@ -116,7 +142,7 @@
             </section>
 
             <!-- SERVICES  II -->
-            <section class="section">
+            <section class="sections" id="section-packagesII">
                 <div class="container">
 
                     <div class="section-title">
@@ -128,20 +154,25 @@
                     <div class="services-grid">
                         <div class="service-card">
                             <h3>Basic Pack</h3>
-                            <p>Custom websites built with HTML, CSS, JavaScript and React.</p>
-                            <br> <a href="projects.html" class="">View →</a>
+                            <p>Perfect for small tournaments and community matches. Includes smooth scheduling, match
+                                management, and basic support for a clean tournament experience.
+                            </p>
+                            <br> <a href="#" class="ud">View more →</a>
                         </div>
 
                         <div class="service-card">
                             <h3>Advance pack</h3>
-                            <p>Clean, modern and user-friendly interfaces for best experience.</p>
-                            <br> <a href="projects.html" class="">View →</a>
+                            <p>Best for competitive events. Includes better coordination, faster support, structured
+                                rules, and improved tournament execution for a professional feel.</p>
+                            <br> <a href="#" class="ud">View more→</a>
                         </div>
 
                         <div class="service-card">
                             <h3>Premium Pack</h3>
-                            <p>Fast websites with optimized code, images and SEO best practices.</p>
-                            <br> <a href="projects.html" class="">View →</a>
+                            <p> Designed for high-level esports tournaments. Includes full tournament management,
+                                priority support, advanced coordination, and premium execution for a top-class event.
+                            </p>
+                            <br> <a href="#" class="ud">View more→</a>
                         </div>
                     </div>
 
@@ -149,12 +180,14 @@
             </section>
 
             <!-- EVENTS -->
-            <section class="section">
+            <section class="sections" id="section-events">
                 <div class="container">
 
                     <div class="section-title">
                         <h2>ESPORTS <span>EVENTS</span></h2>
-                        <p>Some of my recent work created with modern UI and clean code.</p>
+                        <p>We provide complete esports event management with smooth planning, registrations, scheduling,
+                            and team coordination. We ensure fair rules, on-time matches, and professional execution for
+                            a successful and engaging esports event.</p>
                     </div>
 
                     <div class="projects-grid">
@@ -162,7 +195,7 @@
                             <img src="assets/past.jpg" alt="Project">
                             <div class="content">
                                 <h3>PAST EVENTS</h3>
-                                <p>Modern developer portfolio with animations and responsive layout.</p>
+                                <!-- <p>Modern developer portfolio with animations and responsive layout.</p> -->
                             </div>
                         </div>
 
@@ -170,7 +203,7 @@
                             <img src="assets/upcomming.jpg" alt="Project">
                             <div class="content">
                                 <h3>UPCOMMING EVENTS</h3>
-                                <p>Admin dashboard UI with charts and modern design.</p>
+                                <!-- <p>Admin dashboard UI with charts and modern design.</p> -->
                             </div>
                         </div>
 
@@ -178,14 +211,14 @@
                             <img src="assets/live.jpg" alt="Project">
                             <div class="content">
                                 <h3>LIVE EVENTS</h3>
-                                <p>Modern developer portfolio with animations and responsive layout.</p>
+                                <!-- <p>Modern developer portfolio with animations and responsive layout.</p> -->
                             </div>
                         </div>
                         <div class="project-card">
                             <img src="assets/live.jpg" alt="Project">
                             <div class="content">
                                 <h3>LIVE EVENTS</h3>
-                                <p>Modern developer portfolio with animations and responsive layout.</p>
+                                <!-- <p>Modern developer portfolio with animations and responsive layout.</p> -->
                             </div>
                         </div>
 
@@ -196,36 +229,44 @@
 
         </main>
 
-        <footer class="footer">
-            <div class="container footer-grid">
+        <section id="ftr">
+            <footer class="footer">
+                <div class="container footer-grid">
+                    <div>
+                        <h1 class="footer-logo">MAULI <span>WARRIORS</span></h1>
+                        <p class="footer-text">
+                            We host and manage tournaments, offering complete broadcasting and production service.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="footer-title">Quick Links</h4>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div>
+                        <h4 class="footer-title">Social media Links</h4>
+                        <a href="https://youtube.com/@mauliwarriorsofficial1533?si=RRvWRcu5MgN3jgZv">Youtube</a>
+                        <a href="https://wa.me/8369961434">Whatsapp</a>
+                        <a href="https://www.instagram.com/mauliwarriors.in/">Instagram</a>
+                        <a href="https://github.com/vksp9198">Github</a>
+                    </div>
 
-                <div>
-                    <h1 class="footer-logo">MAULI <span>WARRIORS</span></h1>
-                    <p class="footer-text">
-                        We host and manage tournaments, offering complete broadcasting and production service.
-                    </p>
+                    <div>
+                        <h4 class="footer-title">Contact</h4>
+                        <p>📍 Mumbai, India</p>
+                        <p>📧 mauli_esports@gmail.com</p>
+                        <p>📞 +91 98765 43210</p>
+                    </div>
+
                 </div>
-                <div>
-                    <h4 class="footer-title">Quick Links</h4>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
-                </div>
 
-                <div>
-                    <h4 class="footer-title">Contact</h4>
-                    <p>📍 Mumbai, India</p>
-                    <p>📧 mauli_esports@gmail.com</p>
-                    <p>📞 +91 98765 43210</p>
-                </div>
+                <p class="footer-copy  ">© 2026 Mauli esports. All rights reserved.</p>
+            </footer>
+        </section>
 
-            </div>
-
-            <p class="footer-copy">© 2026 Mauli esports. All rights reserved.</p>
-        </footer>
-
-        <script src="assets/js/script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 
 </html>

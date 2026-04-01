@@ -18,6 +18,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: radial-gradient(circle at top right, rgba(0, 217, 255, 0.2), transparent 60%),
         radial-gradient(circle at bottom left, rgba(42, 103, 255, 0.25), transparent 55%),
@@ -37,6 +41,10 @@ a {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+}
+
+.sections {
+    margin: 80px;
 }
 
 /* HEADER */
@@ -70,8 +78,6 @@ a {
     padding-left: 0.6rem;
 }
 
-#logoText {}
-
 #img {
     height: 34px;
     width: 34px;
@@ -80,7 +86,86 @@ a {
     margin: 1rem;
 }
 
-.nav {
+/* nav for PC */
+.tabs {
+    display: flex;
+    position: relative;
+    background-color: var(--bg);
+    /* box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15); */
+    box-shadow: 0 0 20px 2px #ffcc4d;
+    padding: 0.75rem;
+    border-radius: 99px;
+    width: 20rem;
+}
+
+.tabs * {
+    z-index: 2;
+}
+
+.container input[type="radio"] {
+    display: none;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 80px;
+    font-size: .8rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+}
+
+
+/* .container input[type="radio"]:checked+label {
+    color: #185ee0;
+} */
+
+.container input[type="radio"]:checked+label {
+    background-color: var(--cyan);
+    color: var(--bg);
+    /* margin: 12px; */
+}
+
+.container input[id="radio-1"]:checked~.glider {
+    transform: translateX(50%);
+}
+
+.container input[id="radio-2"]:checked~.glider {
+    transform: translateX(100%);
+}
+
+.container input[id="radio-3"]:checked~.glider {
+    transform: translateX(200%);
+}
+
+.container input[id="radio-4"]:checked~.glider {
+    transform: translateX(300%);
+}
+
+/* .glider {
+    position: absolute;
+    display: flex;
+    height: 30px;
+    width: 50px;
+    background-color: #e6eef9;
+    z-index: 1;
+    border-radius: 99px;
+    transition: 0.25s ease-out;
+} */
+
+@media (max-width: 700px) {
+
+    .tabs {
+        transform: scale(0.6);
+    }
+}
+
+/* .nav {
     display: flex;
     gap: 22px;
 }
@@ -94,7 +179,7 @@ a {
 .nav-link:hover {
     opacity: 1;
     color: var(--cyan);
-}
+} */
 
 .header-btns {
     display: flex;
@@ -236,12 +321,12 @@ a {
     border: 1px solid var(--border);
     border-radius: 18px;
     overflow: hidden;
-    padding: 1px;
+    /* padding: 1px; */
 }
 
 .hero-card img {
     width: 100%;
-    border-radius: 14px;
+    border-radius: 18px;
 }
 
 .floating-box {
@@ -378,8 +463,8 @@ a {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
 }
 
 .footer-logo {
@@ -415,7 +500,8 @@ a {
 .footer-copy {
     margin-top: 30px;
     text-align: center;
-    opacity: 0.6;
+    color: #fff;
+    opacity: 0.8;
     font-size: 13px;
 }
 
