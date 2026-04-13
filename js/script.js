@@ -22,7 +22,6 @@ udev.forEach((box) => {
     box.addEventListener("click", function () {
         alert("This service is currently under development and will be available soon. Thank you for your patience.");
     })
-
 });
 
 
