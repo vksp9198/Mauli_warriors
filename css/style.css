@@ -3,11 +3,9 @@
 :root {
     --bg: #050914;
     --card: rgba(255, 255, 255, 0.04);
-    --border: rgba(255, 255, 255, 0.08);
+    --border: #ffffff14;
     --text: #fff;
-    --muted: rgba(255, 255, 255, 0.7);
     --gold: #ffcc4d;
-    --yellow: yellow;
     --shadow: #ffcc4d;
 }
 
@@ -101,7 +99,7 @@ nav {
 }
 
 .nav-link {
-    font-size: 14px;
+    font-size: 16px;
     margin: auto 14px;
     opacity: 0.75;
     position: relative;
@@ -143,7 +141,7 @@ nav {
 }
 
 .btn-primary {
-    background: linear-gradient(90deg, var(--gold), var(--yellow));
+    background: linear-gradient(90deg, var(--gold), yellow);
     color: black;
     width: max-content;
 }
@@ -215,9 +213,10 @@ nav {
 }
 
 .btn-outline:hover {
-    border-color: var(--cyan);
+    border-color: var(--gold);
     color: var(--cyan);
     transform: translateY(-3px);
+    /* background: yellow; */
 }
 
 .hero-stats {
@@ -414,6 +413,13 @@ nav {
     /* justify-content: center; */
     align-items: center;
     gap: 12px;
+}
+
+.mainTxt {
+    border-left: 3px solid #ffcc4d;
+    border-radius: 2px;
+    padding-left: 4px;
+
 }
 
 
