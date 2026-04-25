@@ -50,9 +50,9 @@ a {
 
 .btn {
     /* margin-top: 16px; */
-    padding: 12px 22px;
+    padding: 12px 10px;
     border-radius: 10px;
-    font-weight: 700;
+    font-weight: 600;
     transition: 0.3s;
     display: inline-block;
 }
@@ -157,7 +157,7 @@ a {
 .logoM {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 9px;
 }
 
 .mauli {
@@ -168,7 +168,7 @@ a {
 
 .navLinks {
     display: flex;
-    gap: 25px;
+    gap: 16px;
     list-style: none;
 }
 
@@ -758,8 +758,8 @@ a {
 
 .footerGrid {
     display: grid;
-    grid-template-columns: 1.4fr 1fr 1fr 1fr;
-    gap: 15px;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+    gap: 28px;
     padding-bottom: 35px;
 }
 
@@ -782,7 +782,7 @@ a {
 
 .footer h3 {
     color: var(--link);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .footer ul {
@@ -927,6 +927,7 @@ a {
     .menuBtn {
         display: block;
     }
+
 
     .navLinks {
         position: absolute;
