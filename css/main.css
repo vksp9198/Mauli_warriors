@@ -513,9 +513,16 @@ a {
     border-radius: 10px;
     border: 1px solid var(--secondry);
     color: var(--txtpara);
-    font-weight: 400;
+
     transition: 0.3s;
-    font-size: smaller;
+
+}
+
+.packs ul li {
+    font-weight: 100;
+    font-size: 9px;
+    line-height: 13px;
+
 }
 
 
