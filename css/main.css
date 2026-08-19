@@ -160,10 +160,29 @@ a {
     gap: 9px;
 }
 
-.mauli {
+.logoText {
     border-left: 4px solid rgb(255, 187, 0.25);
     padding-left: 8px;
-    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.animatedText {
+    background-image: url("https://imgs.search.brave.com/N7PhTws3Hp2H54xHNTFLXala_8RgRPLwMVq3C3zx_Ao/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/dmVjdG9yc3RvY2su/Y29tL2kvcHJldmll/dy0xeC8yMS8zOC9n/b2xkZW4teWVsbG93/LXRyaWFuZ2xlLWJn/LWZvci15b3VyLWJ1/c2luZXNzLXZlY3Rv/ci0yMzY2MjEzOC5q/cGc");
+    -webkit-background-clip: text;
+    background-position: center;
+    color: transparent;
+    animation: movebg 5s linear infinite;
+}
+
+@keyframes movebg {
+    0% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
 }
 
 .navLinks {
